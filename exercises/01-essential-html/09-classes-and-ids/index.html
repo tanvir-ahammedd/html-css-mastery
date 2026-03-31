@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Classes and IDs</title>
+
+  <style>
+    body {
+      font-family: Arial;
+    }
+
+    /* Classes */
+    .header {
+      background: #333;
+      color: white;
+      padding: 15px;
+    }
+
+    .card {
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin: 10px 0;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .primary-text {
+      color: blue;
+    }
+
+    .secondary-text {
+      color: green;
+    }
+
+    /* ID (example use) */
+    #footer {
+      background: black;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <h1>My Website</h1>
+  </div>
+
+  <!-- Navigation -->
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+
+  <!-- Section 1 -->
+  <div class="card text-center" id="about">
+    <h2>This is <span class="primary-text">Section 1</span></h2>
+    <p>This is the first paragraph.</p>
+  </div>
+
+  <!-- Section 2 -->
+  <div class="card text-center" id="contact">
+    <h2>This is <span class="secondary-text">Section 2</span></h2>
+    <p>This is the second paragraph.</p>
+  </div>
+
+  <!-- Footer -->
+  <div id="footer">
+    <p>&copy; 2026 My Website</p>
+  </div>
+
+</body>
+</html>
