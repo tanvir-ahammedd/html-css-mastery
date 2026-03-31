@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML Image Map Demo</title>
+</head>
+
+<body>
+
+  <h1>HTML Image Map Example</h1>
+
+  <!-- Image with map -->
+  <img src="./computer.jpg" alt="Computer Setup" usemap="#computermap" width="600" />
+
+  <!-- Image Map -->
+  <map name="computermap">
+
+    <!-- Rectangle area -->
+    <area 
+      shape="rect"
+      coords="34,44,270,350"
+      href="#computer"
+      alt="Computer"
+    />
+
+    <!-- Rectangle area -->
+    <area 
+      shape="rect"
+      coords="290,172,333,250"
+      href="#phone"
+      alt="Phone"
+    />
+
+    <!-- Circle area -->
+    <area 
+      shape="circle"
+      coords="337,300,45"
+      href="#coffee"
+      alt="Coffee"
+    />
+
+  </map>
+
+  <hr />
+
+  <!-- Target Sections -->
+  <h2 id="computer">Computer Section</h2>
+  <p>This is the computer area content.</p>
+
+  <h2 id="phone">Phone Section</h2>
+  <p>This is the phone area content.</p>
+
+  <h2 id="coffee">Coffee Section</h2>
+  <p>This is the coffee area content.</p>
+
+</body>
+</html>

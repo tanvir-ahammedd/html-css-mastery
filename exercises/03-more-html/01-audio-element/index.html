@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML Audio Demo</title>
+</head>
+<body>
+
+  <h1>HTML Audio Example</h1>
+
+  <!-- Basic Audio Player -->
+  <h2>1. Basic Audio</h2>
+  <audio controls>
+    <source src="./song1.mp3" type="audio/mp3" />
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Looping Audio -->
+  <h2>2. Loop Audio</h2>
+  <audio controls loop>
+    <source src="./song1.mp3" type="audio/mp3" />
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Autoplay (may be blocked by browser) -->
+  <h2>3. Autoplay Audio (Muted)</h2>
+  <audio controls autoplay muted>
+    <source src="./song1.mp3" type="audio/mp3" />
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Figure with Caption and Download -->
+  <h2>4. Audio with Caption</h2>
+  <figure>
+    <figcaption>Listen to the song below:</figcaption>
+
+    <audio controls>
+      <source src="./song1.mp3" type="audio/mp3" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <p>
+      <a href="./song1.mp3" download>Download Audio</a>
+    </p>
+  </figure>
+
+</body>
+</html>

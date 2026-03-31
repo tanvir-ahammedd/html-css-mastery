@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML Embedding Demo</title>
+</head>
+
+<body>
+
+  <h1>HTML & CSS Sandbox - Embedding (iframe, embed, object)</h1>
+
+  <hr />
+
+  <!-- 1. Local Webpage -->
+  <h2>1. Local Webpage</h2>
+  <iframe
+    src="./test.html"
+    width="500"
+    height="300"
+    loading="lazy">
+  </iframe>
+
+  <hr />
+
+  <!-- 2. YouTube Video -->
+  <h2>2. YouTube Video</h2>
+  <iframe
+    width="500"
+    height="315"
+    src="https://www.youtube.com/embed/8sXRyHI3bLw"
+    title="YouTube video player"
+    allowfullscreen>
+  </iframe>
+
+  <hr />
+
+  <!-- 3. PDF -->
+  <h2>3. PDF File</h2>
+  <iframe
+    src="./invoicesample.pdf"
+    width="500"
+    height="400">
+  </iframe>
+
+  <hr />
+
+  <!-- 4. Google Maps -->
+  <h2>4. Google Map</h2>
+  <iframe
+    width="500"
+    height="315"
+    loading="lazy"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.0000000000005!2d-122.0841926846827!3d37.42240897982596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e3f0b0b8a3d%3A0x7f3f7e3f0b0b8a3d!2sGoogleplex!5e0!3m2!1sen!2sus">
+  </iframe>
+
+  <hr />
+
+  <!-- 5. Google Calendar -->
+  <h2>5. Google Calendar</h2>
+  <iframe
+    width="500"
+    height="315"
+    src="https://calendar.google.com/calendar/embed?src=en.usa%23holiday%40group.v.calendar.google.com&ctz=America%2FLos_Angeles">
+  </iframe>
+
+  <hr />
+
+  <!-- 6. Embed Tag -->
+  <h2>6. Embed Example (PDF)</h2>
+  <embed
+    src="./invoicesample.pdf"
+    width="500"
+    height="400" />
+
+  <hr />
+
+  <!-- 7. Object Tag -->
+  <h2>7. Object Example (PDF)</h2>
+  <object
+    data="./invoicesample.pdf"
+    width="500"
+    height="400">
+    <p>Unable to display PDF. <a href="./invoicesample.pdf">Download</a></p>
+  </object>
+
+</body>
+</html>

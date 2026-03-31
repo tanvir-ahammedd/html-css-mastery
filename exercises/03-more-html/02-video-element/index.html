@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML Video Demo</title>
+</head>
+
+<body>
+
+  <h1>HTML Video Example</h1>
+
+  <figure>
+    <figcaption>Video 1 - Sample Playback</figcaption>
+
+    <video controls width="600" preload="metadata">
+      
+      <!-- Multiple formats for better browser support -->
+      <source src="./video1.mov" type="video/mp4" />
+      <!-- <source src="./video1.mp4" type="video/mp4" /> -->
+      <!-- <source src="./video1.webm" type="video/webm" /> -->
+
+      <!-- Fallback message -->
+      Your browser does not support the video tag.
+    </video>
+
+    <p>
+      <a href="./video1.mp4" download>Download Video</a>
+    </p>
+  </figure>
+
+</body>
+</html>
