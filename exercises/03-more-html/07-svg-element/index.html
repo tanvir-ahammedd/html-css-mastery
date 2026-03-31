@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Complete SVG Example</title>
+
+  <style>
+    .blob {
+      width: 300px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>SVG Demo</h1>
+
+  <!-- Circle with Text -->
+  <svg width="200" height="200">
+
+    <circle 
+      cx="100" 
+      cy="100" 
+      r="80" 
+      fill="blue"
+      stroke="black"
+      stroke-width="5" />
+
+    <text 
+      x="45" 
+      y="115"
+      fill="white"
+      font-size="40"
+      font-family="Verdana">
+      SVG
+    </text>
+
+  </svg>
+
+  <br><br>
+
+  <!-- Complex Shape (Path Example) -->
+  <svg class="blob" viewBox="0 0 200 200">
+    <path 
+      fill="purple"
+      d="M44.8,-76.3C58.5,-69.3,70.7,-58.5,76.9,-44.9C83.1,-31.4,83.3,-15.7,82.3,-0.6C81.3,14.6,79.1,29.1,71.7,40.7C64.3,52.2,51.7,60.8,38.4,67.3C25.1,73.7,12.6,78,-1.4,80.3C-15.3,82.6,-30.6,82.9,-44.1,76.6C-57.6,70.3,-69.3,57.3,-75.5,42.6C-81.7,27.9,-82.5,11.5,-80.2,-3.8C-77.9,-19.1,-72.5,-38.2,-61.2,-50.5C-49.9,-62.8,-32.7,-68.3,-16.4,-72.5C-0.1,-76.7,15.2,-79.6,30.2,-79.2C45.2,-78.8,60.8,-75.2,44.8,-76.3Z" />
+  </svg>
+
+</body>
+</html>

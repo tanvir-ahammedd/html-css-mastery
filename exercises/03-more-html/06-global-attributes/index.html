@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Global Attributes Demo</title>
+
+  <style>
+    .text-xl {
+      font-size: 20px;
+      color: blue;
+    }
+
+    .box {
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>HTML Global Attributes Demo</h1>
+
+  <!-- CLASS -->
+  <h2 class="text-xl heading-one">This uses a class</h2>
+
+  <!-- ID -->
+  <h2 id="main-heading">This uses an ID</h2>
+
+  <!-- STYLE (inline CSS - not recommended for large projects) -->
+  <p style="color: red; font-size: 20px;">
+    This paragraph is styled using the style attribute.
+  </p>
+
+  <!-- TITLE (tooltip) -->
+  <button title="This is a tooltip">
+    Hover over me
+  </button>
+
+  <br><br>
+
+  <!-- HIDDEN -->
+  <div class="box" hidden>
+    You cannot see me because I am hidden
+  </div>
+
+  <div class="box">
+    I am visible
+  </div>
+
+  <!-- ACCESSKEY -->
+  <button accesskey="h" onclick="alert('Home button clicked')">
+    Press Alt + Shift + H (Windows) or Option + Shift + H (Mac)
+  </button>
+
+  <br><br>
+
+  <!-- TABINDEX -->
+  <h3>Tab Index Example</h3>
+
+  <button tabindex="3">Button 1 (tabindex 3)</button>
+  <button tabindex="1">Button 2 (tabindex 1)</button>
+  <button tabindex="2">Button 3 (tabindex 2)</button>
+
+  <p>Try pressing the Tab key to see focus order change.</p>
+
+  <!-- CONTENTEDITABLE -->
+  <h3>Editable Div</h3>
+  <div contenteditable="true" class="box">
+    You can edit this text directly.
+  </div>
+
+  <!-- DRAGGABLE -->
+  <h3>Draggable Element</h3>
+  <div class="box" draggable="true">
+    Drag me around (text selection style drag)
+  </div>
+
+  <!-- AUTOFOCUS -->
+  <h3>Autofocus Input</h3>
+  <input type="text" placeholder="I am auto-focused" autofocus />
+
+</body>
+</html>

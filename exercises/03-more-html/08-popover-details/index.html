@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Popover + Details Demo</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      padding: 20px;
+    }
+
+    [popover] {
+      padding: 15px;
+      border: 2px solid black;
+      background: #f9f9f9;
+      border-radius: 8px;
+    }
+
+    details {
+      margin-top: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Popover Example</h2>
+
+  <button popovertarget="popover-1">Open Popover 1</button>
+  <button popovertarget="popover-2">Open Popover 2</button>
+
+  <div id="popover-1" popover>
+    This is Popover 1
+  </div>
+
+  <div id="popover-2" popover>
+    <h3>Another Popover</h3>
+    <p>Hello World</p>
+  </div>
+
+  <h2>Details Example</h2>
+
+  <details>
+    <summary>Click for details</summary>
+    <p>This is hidden content</p>
+  </details>
+
+  <details>
+    <summary>More details</summary>
+    <p>Another hidden section</p>
+  </details>
+
+</body>
+</html>
