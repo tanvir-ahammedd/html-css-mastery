@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Datalist</title>
+</head>
+<body>
+
+<h1>Datalist Examples</h1>
+
+<form>
+
+  <label for="language">Favorite Language</label><br>
+  <input list="languages" id="language" name="language">
+
+  <datalist id="languages">
+    <option value="JavaScript">
+    <option value="Python">
+    <option value="C++">
+  </datalist>
+
+  <br><br>
+
+  <label for="time">Pick Time</label><br>
+  <input type="time" list="times">
+
+  <datalist id="times">
+    <option value="10:00">
+    <option value="12:00">
+  </datalist>
+
+</form>
+
+</body>
+</html>

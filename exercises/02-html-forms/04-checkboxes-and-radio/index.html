@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkbox & Radio</title>
+</head>
+<body>
+
+<h1>Preferences</h1>
+
+<form action="#" method="POST">
+
+  <h3>Favorite Languages</h3>
+
+  <label>
+    <input type="checkbox" name="languages[]" value="html">
+    HTML
+  </label>
+
+  <label>
+    <input type="checkbox" name="languages[]" value="css" checked>
+    CSS
+  </label>
+
+  <label>
+    <input type="checkbox" name="languages[]" value="javascript" checked>
+    JavaScript
+  </label>
+
+  <h3>Product Size</h3>
+
+  <label>
+    <input type="radio" name="size" value="small">
+    Small
+  </label>
+
+  <label>
+    <input type="radio" name="size" value="medium" checked>
+    Medium
+  </label>
+
+  <label>
+    <input type="radio" name="size" value="large">
+    Large
+  </label>
+
+  <br><br>
+
+  <button type="submit">Submit</button>
+
+</form>
+
+</body>
+</html>

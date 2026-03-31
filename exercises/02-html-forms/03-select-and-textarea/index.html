@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Select & Textarea</title>
+</head>
+<body>
+
+<h1>Tech Support Form</h1>
+
+<form action="#" method="POST">
+
+  <div>
+    <label for="product">Product</label><br>
+    <select name="product" id="product">
+      <option value="">-- Select Product --</option>
+      <option value="iphone">iPhone</option>
+      <option value="imac" selected>iMac</option>
+      <option value="macbook">MacBook</option>
+    </select>
+  </div>
+
+  <br>
+
+  <div>
+    <label for="message">Message</label><br>
+    <textarea 
+      id="message"
+      name="message"
+      rows="4"
+      cols="40"
+      placeholder="Describe your issue..."
+    ></textarea>
+  </div>
+
+  <br>
+
+  <button type="submit">Submit</button>
+
+</form>
+
+</body>
+</html>
