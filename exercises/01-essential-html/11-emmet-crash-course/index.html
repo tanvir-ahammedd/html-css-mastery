@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML & CSS Sandbox</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    .text-xl {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    #main {
+      border: 2px solid black;
+      padding: 10px;
+      margin: 10px 0;
+    }
+
+    header, footer {
+      background: #f4f4f4;
+      padding: 10px;
+      margin-top: 10px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- div -->
+  <div>Basic div</div>
+
+  <!-- p -->
+  <p>Basic paragraph</p>
+
+  <!-- p.text-xl -->
+  <p class="text-xl">Large text paragraph</p>
+
+  <!-- .text-xl -->
+  <div class="text-xl">Large text div</div>
+
+  <!-- p.text-xl.text-center -->
+  <p class="text-xl text-center">Centered large text</p>
+
+  <!-- #main -->
+  <div id="main">Div with ID main</div>
+
+  <!-- p#main.text-xl.text-center -->
+  <p id="main" class="text-xl text-center">
+    Paragraph with ID and multiple classes
+  </p>
+
+  <!-- div>p -->
+  <div>
+    <p>Nested paragraph</p>
+  </div>
+
+  <!-- div>p*2 -->
+  <div>
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+  </div>
+
+  <!-- ul>li*5 -->
+  <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+    <li>Item 5</li>
+  </ul>
+
+  <!-- div#main>p.text-xl*2 -->
+  <div id="main">
+    <p class="text-xl">Text XL 1</p>
+    <p class="text-xl">Text XL 2</p>
+  </div>
+
+  <!-- div+p -->
+  <div>Sibling div</div>
+  <p>Sibling paragraph</p>
+
+  <!-- div>(header>ul>li*2>a)+footer>p -->
+  <div>
+    <header>
+      <ul>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+      </ul>
+    </header>
+
+    <footer>
+      <p>Footer content</p>
+    </footer>
+  </div>
+
+  <!-- p{Hello World} -->
+  <p>Hello World</p>
+
+  <!-- p>lorem -->
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
+  </p>
+
+  <!-- p>lorem10 -->
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+  </p>
+
+  <!-- a:link -->
+  <a href="http://example.com" target="_blank">Visit Website</a>
+
+  <!-- script:src -->
+  <script src="app.js"></script>
+
+</body>
+</html>
