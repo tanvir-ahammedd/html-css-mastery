@@ -1,0 +1,54 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+/* 1. COLOR NAME */
+.name {
+  color: red;
+}
+
+/* CARD BASE STYLE */
+.card {
+  margin: 15px 0;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+/* 2. HEX */
+.hex {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+/* 3. RGB */
+.rgb {
+  background: rgb(255, 0, 0);
+  color: white;
+}
+
+/* 4. RGBA (transparent background only) */
+.rgba {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+/* 5. HSL */
+.hsl {
+  background: hsl(200, 100%, 50%);
+  color: white;
+}
+
+/* 6. HSLA */
+.hsla {
+  background: hsla(120, 100%, 40%, 0.5);
+  color: white;
+}
+
+/* 7. OPACITY (affects everything) */
+.opacity-box {
+  background: black;
+  color: white;
+  opacity: 0.5;
+}

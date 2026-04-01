@@ -1,0 +1,11 @@
+/* Style all h1 elements */
+h1 {
+    color: blue;
+    font-size: 50px;
+}
+
+/* Style all paragraphs */
+p {
+    color: red;
+    text-decoration: underline;
+}

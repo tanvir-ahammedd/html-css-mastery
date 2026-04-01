@@ -1,0 +1,56 @@
+/* 1. TYPE SELECTORS */
+
+h2 {
+    color: red;
+    font-size: 30px;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+
+/* 2. CLASS SELECTORS */
+
+.sporty {
+    color: red;
+}
+
+.casual {
+    color: blue;
+}
+
+.formal {
+    color: brown;
+}
+
+
+/* 3. ID SELECTOR */
+
+#container {
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 20px;
+}
+
+
+/* 4. MULTIPLE SELECTORS */
+
+.sporty, .casual {
+    font-size: 35px;
+}
+
+
+/* 5. DESCENDANT SELECTOR */
+
+#container p {
+    background-color: lightblue;
+}
+
+
+/* 6. GLOBAL STYLING */
+
+body {
+    font-family: Arial, sans-serif;
+}

@@ -1,0 +1,26 @@
+/* GENERAL ICON STYLE */
+i {
+  font-size: 30px;
+  margin: 10px;
+  color: #333;
+}
+
+/* HOVER EFFECT */
+i:hover {
+  color: red;
+  cursor: pointer;
+}
+
+/* SPECIFIC ICON STYLING */
+.fa-facebook {
+  color: #1877f2;
+  font-size: 40px;
+}
+
+.fa-twitter {
+  color: #1da1f2;
+}
+
+.fa-instagram {
+  color: #e1306c;
+}

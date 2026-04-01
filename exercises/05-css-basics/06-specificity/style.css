@@ -1,0 +1,37 @@
+/* 1. ELEMENT SELECTOR (LOWEST PRIORITY) */
+h1 {
+  color: red;
+}
+
+/* 2. CLASS SELECTOR */
+.title {
+  color: green;
+}
+
+/* 3. ID SELECTOR */
+#heading {
+  color: purple;
+}
+
+/* 4. CONTAINER + ELEMENT (MORE SPECIFIC) */
+.container h1 {
+  color: blue;
+}
+
+/* 5. IMPORTANT RULE (HIGHEST PRIORITY) */
+h1 {
+  color: black !important;
+}
+
+/* PAGE STYLING */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  padding: 20px;
+}
+
+.container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}

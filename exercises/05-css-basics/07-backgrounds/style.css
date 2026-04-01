@@ -1,0 +1,32 @@
+/* Reset default spacing */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* HERO SECTION */
+.hero {
+  height: 100vh;              /* full screen height */
+  display: flex;              /* center content */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+
+  /* 🔥 Background (BEST PRACTICE SHORTHAND) */
+  background: url("./images/hero.jpg") no-repeat center/cover;
+
+  /* Optional: fixed scrolling effect */
+  background-attachment: fixed;
+}
+
+/* Text styling */
+.hero h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
