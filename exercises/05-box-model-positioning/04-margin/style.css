@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Reset default margins */
+h3, p {
+  margin: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/* Common box styling */
+.box {
+  background: coral;
+  padding: 20px;
+  max-width: 400px;
+  margin: 20px 0;
+}
+
+/* Center first box */
+.box1 {
+  margin: 20px auto;
+}
+
+/* Custom margins */
+.box2 {
+  margin: 10px 30px 40px 50px;
+}
+
+/* Negative margin example */
+.box3 {
+  margin-left: -20px;
+}

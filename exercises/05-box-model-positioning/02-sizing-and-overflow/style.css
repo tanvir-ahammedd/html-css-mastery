@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.box {
+  background: darkblue;
+  color: white;
+  padding: 20px;
+  border: 3px solid green;
+  margin: 20px 0;
+}
+
+/* Box 1: Fixed size + overflow */
+.box1 {
+  width: 200px;
+  height: 100px;
+  overflow: auto;
+}
+
+/* Box 2: Percentage width */
+.box2 {
+  width: 50%;
+}
+
+.box2 p {
+  width: 50%;
+  background: rgba(255,255,255,0.2);
+}
+
+/* Box 3: Responsive container */
+.box3 {
+  max-width: 800px;
+  min-width: 400px;
+}

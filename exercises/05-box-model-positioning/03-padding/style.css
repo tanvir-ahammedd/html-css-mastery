@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.box {
+  background-color: darkblue;
+  color: white;
+  width: 300px;
+  border: 3px solid green;
+}
+
+/* Example 1: All sides */
+/*
+.box {
+  padding: 20px;
+}
+*/
+
+/* Example 2: Individual sides */
+/*
+.box {
+  padding-top: 20px;
+  padding-right: 40px;
+  padding-bottom: 100px;
+  padding-left: 60px;
+}
+*/
+
+/* Example 3: 4 values */
+.box {
+  padding: 20px 40px 100px 60px;
+}
+
+/* Example 4: 2 values */
+/*
+.box {
+  padding: 20px 40px;
+}
+*/
+
+/* Example 5: 3 values */
+/*
+.box {
+  padding: 20px 40px 30px;
+}
+*/
