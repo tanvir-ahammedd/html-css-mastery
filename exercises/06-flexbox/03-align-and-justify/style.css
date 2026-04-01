@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Flex container */
+.container {
+  display: flex;
+
+  height: 400px;
+  width: 100%;
+
+  background-color: lightblue;
+
+  /* Main axis alignment */
+  justify-content: space-between;
+
+  /* Cross axis alignment */
+  align-items: center;
+}
+
+/* Flex items */
+.item {
+  width: 200px;
+  height: 200px;
+
+  background-color: coral;
+  border: 1px solid black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Individual override */
+.item-2 {
+  align-self: flex-end; /* moves only this item down */
+}
+
+.item-3 {
+  align-self: flex-start; /* moves this item to top */
+}

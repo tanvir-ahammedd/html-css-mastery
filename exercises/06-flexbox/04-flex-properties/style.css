@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  height: 200px;
+}
+
+/* Common style */
+.item {
+  background: coral;
+  border: 1px solid black;
+  padding: 20px;
+}
+
+/* Equal base behavior */
+.item-1 {
+  flex: 1; /* small */
+}
+
+.item-2 {
+  flex: 2; /* main area */
+}
+
+.item-3 {
+  flex: 1; /* small */
+}

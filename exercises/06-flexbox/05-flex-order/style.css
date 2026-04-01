@@ -1,0 +1,37 @@
+/* Page Styling */
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/* Container */
+.container {
+  display: flex;              /* Enable flexbox */
+  background: lightblue;
+  padding: 10px;
+  gap: 10px;                  /* Space between items */
+}
+
+/* Flex Items */
+.item {
+  flex: 1;                    /* Equal width */
+  background: coral;
+  border: 2px solid black;
+  padding: 30px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Custom Order */
+.item-1 { order: 2; }
+.item-2 { order: 1; }
+.item-3 { order: 3; }
+.item-4 { order: 6; }
+.item-5 { order: 5; }
+.item-6 { order: 4; }
+
+/* Bonus: Hover to reset order */
+.container:hover .item {
+  order: 0; /* Back to default */
+}

@@ -1,0 +1,22 @@
+/* Flex container */
+.container {
+  display: flex;              /* enables flexbox */
+  flex-direction: row;        /* horizontal layout (default) */
+
+  justify-content: space-between; /* space along main axis */
+  align-items: center;            /* alignment on cross axis */
+
+  height: 200px;
+  border: 2px solid black;
+}
+
+/* Flex items */
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+  display: flex;
+  justify-content: center; /* centers text horizontally inside box */
+  align-items: center;     /* centers text vertically inside box */
+  border: 1px solid gray;
+}

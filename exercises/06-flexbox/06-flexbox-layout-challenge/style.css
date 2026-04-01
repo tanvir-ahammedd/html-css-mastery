@@ -1,0 +1,86 @@
+/* Reset basic spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6; /* Better readability */
+}
+
+/* Paragraph spacing */
+p {
+  margin: 20px 0;
+}
+
+/* Header */
+.header {
+  background: coral;
+  padding: 40px;
+  color: white;
+}
+
+/* Navigation menu */
+.main-menu {
+  display: flex;              /* Makes items horizontal */
+  list-style: none;           /* Remove bullets */
+  gap: 20px;                  /* Space between items */
+  padding: 15px;
+  background: #f4f4f4;
+}
+
+/* Links */
+.main-menu a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+/* Main layout */
+.main {
+  display: flex;              /* Side-by-side layout */
+  gap: 40px;                  /* Space between section & aside */
+  padding: 40px;
+}
+
+/* Main content */
+.main section {
+  flex: 1;                    /* Takes remaining space */
+}
+
+/* Sidebar */
+.main aside {
+  width: 250px;               /* Fixed width sidebar */
+}
+
+/* Sidebar heading */
+.main aside h3 {
+  background: coral;
+  color: white;
+  padding: 10px;
+}
+
+/* Sidebar list */
+.main aside ul {
+  list-style: none;
+}
+
+.main aside li {
+  padding: 10px;
+  background: #f4f4f4;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Responsive (IMPORTANT) */
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;   /* Stack vertically */
+  }
+
+  .main aside {
+    width: 100%;              /* Full width on mobile */
+  }
+}

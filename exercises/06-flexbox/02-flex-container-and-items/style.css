@@ -1,0 +1,27 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Flex container */
+.container {
+  display: flex;              /* enables flexbox */
+  flex-direction: row;        /* horizontal layout */
+  flex-wrap: wrap;            /* allows items to move to next line */
+
+  gap: 10px;                  /* spacing between items */
+
+  background-color: #ccc;
+  padding: 10px;
+}
+
+/* Flex items */
+.item {
+  width: 200px;
+  height: 200px;
+  background-color: coral;
+  border: 1px solid black;
+
+  display: flex;              /* center text inside each box */
+  justify-content: center;
+  align-items: center;
+}
