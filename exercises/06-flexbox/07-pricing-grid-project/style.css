@@ -1,0 +1,163 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASE STYLES */
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  line-height: 1.6;
+  background: #27264b;
+  color: #f3f3f3;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1100px;
+  margin: 150px auto 0;
+  padding: 70px 60px;
+  background: #f8fafe;
+  border-radius: 10px;
+}
+
+/* FLEX LAYOUT */
+.pricing {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* CARD */
+.card {
+  flex: 1; /* Equal width */
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+
+  /* Shadow */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* CARD HEADER */
+.card h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  padding: 15px;
+  color: #333;
+  background: #f8fafe;
+}
+
+/* Gradient headers */
+.card-pro h2 {
+  background: linear-gradient(90deg, #6a11cb 13%, #2575fc 100%);
+  color: #fff;
+}
+
+.card-enterprise h2 {
+  background: linear-gradient(90deg, #ff7e5f 13%, #feb47b 100%);
+  color: #fff;
+}
+
+/* PRICE */
+.price {
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* Dollar sign */
+.price sup {
+  font-size: 18px;
+  position: relative;
+  left: -5px;
+}
+
+/* /mo */
+.price span {
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+/* DESCRIPTION TEXT */
+.main-text {
+  font-size: 14px;
+  margin-bottom: 50px;
+}
+
+/* BUTTON */
+.btn {
+  display: block;
+  background: #fff;
+  color: #27264b;
+  border: 1px solid #27264b;
+  padding: 15px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Hover */
+.btn:hover {
+  background: #27264b;
+  color: #fff;
+}
+
+/* Featured button */
+.btn-primary {
+  background: #27264b;
+  color: #fff;
+}
+
+/* Reverse hover */
+.btn-primary:hover {
+  background: #fff;
+  color: #27264b;
+}
+
+/* LIST */
+.card ul {
+  text-align: left;
+  margin-top: 50px;
+}
+
+/* Icons */
+.card ul li i {
+  color: #2ecc71;
+  margin-right: 10px;
+}
+
+.card {
+  color: #333;
+}
+
+.main-text {
+  color: #777;
+}
+
+.card ul li {
+  color: #555;
+}
+
+.price {
+  color: #222;
+}
