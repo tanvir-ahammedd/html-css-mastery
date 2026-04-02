@@ -1,0 +1,50 @@
+/* Reset basic styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* MAIN CONTAINER */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+  background: lightgray;
+
+  /* 🔥 Enable container queries */
+  container-type: inline-size;
+
+  /* Give height so cqh works */
+  height: 80vh;
+}
+
+/* SHARED CARD STYLE */
+.card {
+  background: white;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* CARD 1 */
+.card-1 {
+  /* 🔥 50% of container width */
+  width: 50cqw;
+}
+
+/* CARD 2 */
+.card-2 {
+  /* 🔥 70% of container width */
+  width: 70cqw;
+
+  /* 🔥 50% of container height */
+  height: 50cqh;
+}
+
+/* 🔥 Container Query */
+@container (max-width: 600px) {
+  .card {
+    /* Expand cards when container is small */
+    width: 95cqw;
+  }
+}

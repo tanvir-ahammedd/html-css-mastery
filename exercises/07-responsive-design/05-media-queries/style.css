@@ -1,0 +1,39 @@
+/* Base styles (desktop first) */
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.container {
+  display: flex;
+}
+
+.box {
+  flex: 1;
+  padding: 2rem;
+  background: lightblue;
+  border: 1px solid black;
+  text-align: center;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .container {
+    flex-wrap: wrap;
+  }
+
+  .box {
+    flex: 50%; /* 2 per row */
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .box {
+    flex: 100%; /* stacked */
+  }
+}

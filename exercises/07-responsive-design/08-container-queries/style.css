@@ -1,0 +1,51 @@
+/* Make body layout side-by-side */
+body {
+  display: flex;
+  gap: 20px;
+}
+
+/* MAIN CONTAINER */
+.main {
+  width: 70%;
+  padding: 20px;
+
+  /* Enable container queries */
+  container-type: inline-size;
+  container-name: main;
+}
+
+/* SIDEBAR CONTAINER */
+.sidebar {
+  width: 30%;
+  padding: 20px;
+  background: lightgray;
+
+  /* Enable container queries */
+  container-type: inline-size;
+  container-name: sidebar;
+}
+
+/* Default styles */
+.main p {
+  background: lightgreen;
+  padding: 20px;
+}
+
+.sidebar p {
+  background: lightblue;
+  padding: 20px;
+}
+
+/* 🔥 Container Query for MAIN */
+@container main (max-width: 500px) {
+  .main p {
+    background: orange;
+  }
+}
+
+/* 🔥 Container Query for SIDEBAR */
+@container sidebar (max-width: 300px) {
+  .sidebar p {
+    background: pink;
+  }
+}

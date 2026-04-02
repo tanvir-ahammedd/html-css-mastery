@@ -1,0 +1,57 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container */
+.container {
+  max-width: 1000px; /* limit max width */
+  margin: auto;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Cards layout */
+.cards {
+  display: flex;
+  gap: 20px;
+}
+
+/* Individual card */
+.card {
+  flex: 1; /* equal width */
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* Responsive images */
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Typography */
+h1 {
+  font-size: 4vw; /* fluid text */
+}
+
+/* 📱 MEDIA QUERY */
+@media (max-width: 768px) {
+
+  /* Stack cards vertically */
+  .cards {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 6vw;
+  }
+}

@@ -1,0 +1,84 @@
+/* DEFAULT (DESKTOP) */
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Header */
+.header {
+  padding: 40px;
+  background: #333;
+  color: white;
+}
+
+/* Menu */
+.main-menu {
+  display: flex; /* horizontal layout */
+  list-style: none;
+  padding: 0;
+}
+
+.main-menu li {
+  margin-right: 20px;
+}
+
+/* Main layout */
+.main {
+  display: flex; /* side by side */
+}
+
+/* Sidebar */
+aside {
+  width: 300px;
+  background: #f4f4f4;
+  padding: 20px;
+}
+
+/* Content */
+section {
+  flex: 1; /* take remaining space */
+  padding: 20px;
+}
+
+
+/* MOBILE (RESPONSIVE) */
+
+@media (max-width: 768px) {
+
+  /* Header adjustments */
+  .header {
+    padding: 20px;
+  }
+
+  .header h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  /* Menu becomes vertical */
+  .main-menu {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .main-menu li {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 6px;
+  }
+
+  /* Remove last border */
+  .main-menu li:last-child {
+    border-bottom: none;
+  }
+
+  /* Stack content */
+  .main {
+    flex-direction: column-reverse;
+  }
+
+  /* Full width sidebar */
+  .main aside {
+    width: 100%;
+  }
+}

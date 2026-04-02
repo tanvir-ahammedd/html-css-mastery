@@ -1,0 +1,42 @@
+/* RESET */
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* CONTAINER */
+.container {
+  padding: 70px 60px; /* Large screen spacing */
+}
+
+/* FLEX LAYOUT */
+.pricing {
+  display: flex;
+  gap: 20px; /* space between cards */
+}
+
+/* CARDS */
+.card {
+  flex: 1;
+  padding: 20px;
+  background: lightblue;
+  text-align: center;
+  border: 1px solid black;
+}
+
+
+/* 📱 RESPONSIVE PART */
+
+@media (max-width: 768px) {
+
+  /* Stack cards vertically */
+  .pricing {
+    flex-direction: column;
+  }
+
+  /* Reduce padding for smaller screens */
+  .container {
+    padding: 40px 30px;
+    margin: 2rem; /* outer spacing */
+  }
+}

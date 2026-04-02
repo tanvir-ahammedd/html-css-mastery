@@ -1,0 +1,33 @@
+/* Reset default margin */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* HERO SECTION */
+.hero {
+  height: 100vh; /* Full screen height */
+  background: lightblue;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical center */
+  align-items: center;     /* horizontal center */
+}
+
+/* Responsive heading */
+.hero h1 {
+  font-size: 8vw; /* scales with width */
+  margin: 0;
+}
+
+/* Paragraph (use REM, not VW) */
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* Content below */
+.content {
+  padding: 2rem;
+  background: #f4f4f4;
+}
