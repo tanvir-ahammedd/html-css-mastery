@@ -1,0 +1,75 @@
+/* Smooth scrolling applied to root */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Remove default styles */
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Layout */
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(45deg, #f00, #00f);
+  padding: 10px 0;
+  margin-bottom: 80px;
+}
+
+/* Navigation */
+.menu ul {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+/* Sections */
+.section {
+  margin: 30px 0;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  background: linear-gradient(45deg, #f00, #00f);
+  color: white;
+}
+
+/* Responsive images */
+img {
+  max-width: 100%;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Sticky navbar */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: linear-gradient(45deg, #f00, #00f);
+  padding: 10px 0;
+}
+
+/* Prevent content hiding under navbar */
+.section {
+  scroll-margin-top: 80px;
+}

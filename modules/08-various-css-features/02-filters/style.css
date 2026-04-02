@@ -1,0 +1,35 @@
+:root {
+    --blur: 3px;
+    --brightness: 120%;
+    --grayscale: 40%;
+}
+
+/* Container styling */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+/* Image styling */
+.image {
+    max-width: 100%;
+
+    /* Multiple filters chained */
+    filter:
+        grayscale(var(--grayscale))
+        /* partial grayscale */
+        blur(var(--blur))
+        /* blur effect */
+        brightness(var(--brightness));
+    /* brighter */
+
+    transition: filter 0.3s ease;
+    /* smooth change */
+}
+
+/* Hover effect */
+.image:hover {
+    filter: none;
+    /* restore original */
+}

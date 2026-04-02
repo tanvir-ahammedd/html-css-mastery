@@ -1,0 +1,22 @@
+/* Container setup */
+.container {
+  width: 1000px;
+  height: 200px;
+  background: black;
+  display: flex;
+  /* makes items horizontal */
+}
+
+/* Items */
+.item {
+  background: coral;
+  height: 100%;
+  margin: 10px;
+
+  /* Key part: dynamic width */
+  width: calc(100% / 5 - 20px);
+  /* Explanation:
+     100% / 5 = equal width
+     -20px = subtract margin (10 left + 10 right)
+  */
+}

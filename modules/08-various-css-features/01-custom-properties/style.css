@@ -1,0 +1,50 @@
+/* Global variables */
+:root {
+  --primary-color: lightblue;
+  --secondary-color: lightcoral;
+  --tertiary-color: lightgreen;
+
+  --shadow-opacity: 0.3;
+
+  --container-width: 600px;
+}
+
+/* Header */
+header {
+  background: var(--primary-color);
+  /* using variable */
+  padding: 20px;
+  text-align: center;
+}
+
+/* Layout */
+.container {
+  display: flex;
+  max-width: var(--container-width);
+  /* reusable width */
+  margin: 30px auto;
+  gap: 20px;
+}
+
+/* Boxes */
+.box {
+  flex: 1;
+  padding: 20px;
+  border-radius: 10px;
+
+  /* partial variable usage */
+  box-shadow: 0 0 10px rgba(0, 0, 0, var(--shadow-opacity));
+}
+
+/* Individual colors */
+.box1 {
+  background: var(--primary-color);
+}
+
+.box2 {
+  background: var(--secondary-color);
+}
+
+.box3 {
+  background: var(--tertiary-color);
+}
