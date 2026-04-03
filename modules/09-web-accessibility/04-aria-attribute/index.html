@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ARIA Practice</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <style>
+      button:focus,
+      input:focus,
+      a:focus {
+        outline: 3px solid blue;
+      }
+      .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1 id="site-title">My Website</h1>
+    </header>
+
+    <nav aria-labelledby="site-title">
+      <ul>
+        <li><a href="#">Home</a></li>
+
+        <li>
+          <a href="#" aria-label="Visit our Facebook page">
+            <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <section>
+        <h2 id="form-heading">Contact Form</h2>
+
+        <p id="form-info">
+          Please complete all the fields before submitting the form.
+        </p>
+
+        <form aria-labelledby="form-heading" aria-describedby="form-info">
+          <label for="name">Name</label>
+          <input type="text" id="name" />
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

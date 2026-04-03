@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accessibility Practice</title>
+  </head>
+
+  <body>
+    <!-- Banner -->
+    <header role="banner">
+      <h1>My Website</h1>
+      <p>This is a simple accessibility demo page</p>
+    </header>
+
+    <main>
+      <h2>Home Section</h2>
+    </main>
+
+    <!-- button -->
+    <a href="#" role="button">click Me</a>
+
+    <!-- Image as button -->
+    <img
+      src="https://picsum.photos/200/300"
+      alt=""
+      role="button"
+      aria-label="Open something"
+      tabindex="0"
+      id="imgBtn"
+    />
+
+    <!-- Listbox example -->
+    <h2>Fruit List</h2>
+    <ul role="listbox" aria-label="Fruit options">
+      <li role="option">Apple</li>
+      <li role="option">Grapes</li>
+      <li role="option">Orange</li>
+      <li role="option">Cherry</li>
+    </ul>
+
+    <!-- Region section -->
+    <div role="region" aria-label="FAQ area">
+      <h2>FAQ</h2>
+      <p>Some common questions will go here</p>
+    </div>
+
+    <!-- Alert message -->
+    <div role="alert">
+      <p>Data saved!</p>
+    </div>
+
+    <script>
+      document.querySelector('img').addEventListener('click', function () {
+        alert('Image Clicked!');
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Accessible Website Demo</title>
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="header-wrapper">
+        <a href="/" class="logo" aria-label="Homepage">
+          MyWebsite
+        </a>
+
+        <nav class="main-nav" aria-label="Main Navigation">
+          <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li>
+              <a href="#" aria-label="Visit our Facebook page">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </li>
+          </ul>
+
+          <form class="search-form" role="search">
+            <label for="search-input" class="visually-hidden">
+              Search the website
+            </label>
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Search..."
+            />
+            <button type="submit">Search</button>
+          </form>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <h1>Welcome to My Website</h1>
+      <p>This is a simple layout focused on accessibility and clean structure.</p>
+    </main>
+  </body>
+</html>

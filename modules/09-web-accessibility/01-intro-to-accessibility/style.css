@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* High contrast for readability */
+body {
+  background: white;
+  color: black;
+}
+
+nav ul {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+}
+
+/* Focus styles for keyboard users */
+a:focus, button:focus, input:focus {
+  outline: 3px solid blue;
+}
+
+/* Form spacing */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+}
+
+input {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+button {
+  padding: 10px;
+  cursor: pointer;
+}
