@@ -1,0 +1,20 @@
+.container p {
+  color: gray;
+}
+
+.container > p {
+  color: red;
+  font-weight: bold;
+}
+
+h1 + a {
+  color: green;
+}
+
+h1 ~ a {
+  background: yellow;
+}
+
+.container > ul + div {
+  background: lightblue;
+}

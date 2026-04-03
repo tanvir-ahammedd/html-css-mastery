@@ -1,0 +1,38 @@
+input[type="email"] {
+  border: 2px solid green;
+}
+
+input[name="name"] {
+  border-color: blue;
+}
+
+/* 3. Multiple conditions (AND) */
+input[type="text"][id="name"] {
+  background: lightblue;
+}
+
+
+input[required] {
+  border: 2px solid red;
+}
+
+input[type="password"][maxlength="8"] {
+  background: lightgreen;
+}
+
+button[type="submit"] {
+  background: purple;
+  color: white;
+}
+
+a[href^="#"] {
+  color: yellow;
+}
+
+a[href$=".com"] {
+  color: lightgreen;
+}
+
+a[href*="example"] {
+  text-decoration: underline;
+}
