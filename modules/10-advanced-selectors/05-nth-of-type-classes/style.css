@@ -1,0 +1,53 @@
+p:first-of-type {
+  color: blue;
+}
+
+p:last-of-type {
+  color: green;
+}
+
+p:nth-of-type(2) {
+  font-weight: bold;
+}
+
+p:nth-child(2) {/* First paragraph of its type */
+p:first-of-type {
+  color: blue;
+}
+
+/* Last paragraph */
+p:last-of-type {
+  color: green;
+}
+
+/* Second paragraph */
+p:nth-of-type(2) {
+  font-weight: bold;
+}
+
+/* Compare with nth-child */
+p:nth-child(2) {
+  background: yellow; /* will hit FIRST p, not second */
+}
+
+/* Every even list item */
+li:nth-of-type(even) {
+  background: lightgray;
+}
+
+/* Combine pseudo-class + pseudo-element */
+.container p:first-of-type::first-letter {
+  font-size: 2rem;
+  color: red;
+}
+  background: yellow;
+}
+
+li:nth-of-type(even) {
+  background: lightgray;
+}
+
+.container p:first-of-type::first-letter {
+  font-size: 2rem;
+  color: red;
+}

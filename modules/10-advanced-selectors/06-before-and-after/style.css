@@ -1,0 +1,44 @@
+body {
+  font-family: Arial;
+}
+
+/* Insert text before heading */
+h2::before {
+  content: "👋 ";
+  color: red;
+}
+
+/* Required asterisk */
+label.required::after {
+  content: "*";
+  color: red;
+  margin-left: 5px;
+}
+
+.card {
+  position: relative;
+  display: inline-block;
+}
+
+/* image styling */
+.card img {
+  display: block;
+}
+
+.card::after {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* hover effect */
+.card:hover::after {
+  background: rgba(0, 0, 0, 0.7);
+}

@@ -1,0 +1,47 @@
+body {
+  font-family: Arial;
+  padding: 20px;
+}
+
+p::first-letter {
+  font-size: 2rem;
+  color: purple;
+  font-weight: bold;
+  padding-right: 2px;
+}
+
+p::first-line {
+  color: teal;
+}
+
+p::selection {
+  color: red;
+  background: yellow;
+}
+
+input:required {
+  border: 2px solid red;
+}
+
+input[required] {
+  background: #f3f3f3;
+}
+
+input::placeholder {
+  color: purple;
+  font-weight: bold;
+}
+
+input::file-selector-button {
+  font-weight: bold;
+  color: dodgerblue;
+  background: white;
+  padding: 0.5rem;
+  border: 1px solid gray;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+li::marker {
+  content: "->";
+}
