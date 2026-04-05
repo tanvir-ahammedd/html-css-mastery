@@ -1,0 +1,29 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 20px auto;
+  background-color: #eee;
+}
+
+.item {
+  background: coral;
+  padding: 16px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.grid-box {
+  display: grid;
+
+  /* fixed + flexible columns */
+  grid-template-columns: 500px 1fr 1fr;
+
+  /* different gap options */
+  /* row-gap: 20px; */
+  /* column-gap: 20px; */
+
+  gap: 20px;
+}
