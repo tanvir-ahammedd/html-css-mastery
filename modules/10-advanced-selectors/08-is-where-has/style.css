@@ -1,0 +1,28 @@
+body {
+  font-family: Arial;
+}
+
+.container :is(h1, h2, p) {
+  color: blue;
+}
+
+/* Using :is() for states */
+a:is(:hover, :focus) {
+  background: pink;
+}
+
+.container :where(h1, h2, p) {
+  color: green; /* Low specificity */
+}
+
+/* If container has h1 with span → apply */
+.container:has(h1 span) {
+  border: 3px solid red;
+  padding: 10px;
+}
+
+
+/* h1 only if followed by h2 */
+h1:has(+ h2) {
+  color: purple;
+}
