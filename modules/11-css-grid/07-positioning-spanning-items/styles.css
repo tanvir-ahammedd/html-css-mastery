@@ -1,0 +1,37 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 30px auto;
+  background: #f4f4f4;
+  height: 600px;
+}
+
+.item {
+  background-color: coral;
+  padding: 1rem;
+  border: 1px solid #333;
+  text-align: center;
+}
+
+.item-grid {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+}
+
+/* item 1 takes 2 columns */
+.item:nth-child(1) {
+  grid-column: span 2;
+}
+
+/* item 3 takes 2 rows */
+.item:nth-child(3) {
+  grid-row: span 2;
+}
+
+/* last item stretches 2 columns */
+.item:nth-child(9) {
+  grid-column: span 2;
+}

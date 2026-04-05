@@ -1,0 +1,23 @@
+/* Container becomes a grid */
+.container {
+  display: grid;
+
+  /* Define 3 rows */
+  grid-template-rows: 100px 150px 200px;
+
+  /* Optional: define columns */
+  grid-template-columns: 1fr 1fr 1fr;
+
+  gap: 10px;
+
+  background: lightgray;
+  padding: 10px;
+}
+
+/* Grid items styling */
+.item {
+  background: coral;
+  padding: 10px;
+  border: 1px solid #333;
+  text-align: center;
+}
