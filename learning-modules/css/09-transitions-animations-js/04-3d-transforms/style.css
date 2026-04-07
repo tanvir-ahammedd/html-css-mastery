@@ -1,0 +1,57 @@
+/* Page background */
+body {
+  background: #f4f4f4;
+}
+
+/* Center container */
+.container {
+  max-width: 600px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Perspective wrapper */
+.card-container {
+  margin-top: 50px;
+  text-align: center;
+  perspective: 1000px; /* 3D depth */
+}
+
+/* Card */
+.card {
+  width: 200px;
+  height: 300px;
+  position: relative;
+  transition: transform 0.5s ease; /* smooth animation */
+  transform-style: preserve-3d; /* enable 3D */
+}
+
+/* Flip on hover */
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+/* Both faces */
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  line-height: 300px;
+  color: white;
+  text-align: center;
+  backface-visibility: hidden; /* hide backside */
+}
+
+/* Front */
+.front {
+  background: #3498db;
+}
+
+/* Back */
+.back {
+  background: #2ecc71;
+  transform: rotateY(180deg); /* flipped initially */
+}
