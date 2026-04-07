@@ -4,14 +4,14 @@ A collection of learning exercises and fully responsive website projects built w
 
 ---
 
-## 🚀 Live Projects
+# 🚀 Live Projects
 
 | # | Project | Live Demo |
 |---|---------|-----------|
-| 1 | **Leno Website** | [🔗 Live](https://leno-tanvir.netlify.app/) |
-| 2 | **Tutor Website** | [🔗 Live](https://tutor-tanvir.netlify.app/) |
-| 3 | **Lumina Website** | [🔗 Live](https://lumina-tanvir.netlify.app/) |
-| 4 | **Bono Landing Website** | [🔗 Live](https://landing-form-tanvir.netlify.app/) |
+| 1 | **Bono Landing Form** | [🔗 Live](https://landing-form-tanvir.netlify.app/) |
+| 2 | **Lumina Creative** | [🔗 Live](https://lumina-tanvir.netlify.app/) |
+| 3 | **Tutor Website** | [🔗 Live](https://tutor-tanvir.netlify.app/) |
+| 4 | **Leno Website** | [🔗 Live](https://leno-tanvir.netlify.app/) |
 
 ---
 
