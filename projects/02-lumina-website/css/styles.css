@@ -5,7 +5,7 @@
 }
 
 :root {
-  --primary-color: #fde8c8;
+  --primary-color: #fcf5e9;
   --dark-color: #2b2b2b;
   --container-normal: 1100px;
   --container-wide: 1400px;
@@ -99,7 +99,7 @@ img {
 /* Header */
 .header {
   margin: 1.5rem auto;
-  border-top: 3px solid var(--primary-color);
+  /* border-top: 3px solid var(--primary-color); */
   padding-top: 1rem;
 }
 
