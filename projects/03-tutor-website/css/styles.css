@@ -82,8 +82,9 @@ img {
 /* Section Header Block */
 .section-header {
   max-width: 750px;
-  margin: 0 auto 3rem;
+  margin: 0 auto;
   text-align: center;
+  margin-bottom: 3rem;
 }
 
 .section-header h2 {
@@ -208,12 +209,12 @@ img {
 
 /* Hero Section */
 .hero {
-  position: relative;
-  overflow-x: hidden;
-
+  background: #000 url('../images/header-background.jpg') center center/cover
+    no-repeat;
   padding: 11.5rem 2rem 8rem;
-  background: #000 url('../images/header-background.jpg') center/cover no-repeat;
   color: #fff;
+  overflow-x: hidden;
+  position: relative;
 }
 
 .hero .hero-flex {
@@ -423,7 +424,7 @@ img {
 
 /* Stats Section */
 .stats {
-  background: #000 url('../images/stats-background.jpg') center/cover no-repeat;
+  background: #000 url('../images/stats-background.jpg') center center/cover no-repeat;
   color: #fff;
 }
 
@@ -448,7 +449,7 @@ img {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1rem;
   margin: 2rem 0;
   text-align: center;
 }
