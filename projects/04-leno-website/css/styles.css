@@ -337,10 +337,17 @@ img {
 
 .preview__video-play-button {
   position: absolute;
-  top: 48%;
+  top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   z-index: 10;
+  display: block;
+  box-sizing: content-box;
+  width: 2rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 1.25rem 1.25rem 1.25rem 1.75rem
 }
 
 /* play circle */
